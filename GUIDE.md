@@ -60,7 +60,7 @@ What you give up: there's no version history. If you overwrite a file by mistake
 
 ## GitHub Setup
 
-Before anything else, download the Memory Hole starter files: **[Download ZIP](../../archive/refs/heads/main.zip)**
+Before anything else, download the Memory Hole starter files: **[Download ZIP](https://github.com/cporto/memory_hole/archive/refs/heads/main.zip)**
 
 The folder contains all the files referenced in this guide — including `ONBOARDING.md`, which you'll need in Step 1.
 
@@ -260,7 +260,7 @@ That's it — your changes are saved to GitHub and backed up.
 This is a one-time step. It generates the two core files you need to use the system.
 
 1. Read **[GUIDE.md](GUIDE.md)** first — it covers storage setup, mobile access, and your daily workflow
-2. Download the files: **[Download ZIP](../../archive/refs/heads/main.zip)** — unzip and you're ready. If you know how to use git, clone the repo instead.
+2. Download the files: **[Download ZIP](https://github.com/cporto/memory_hole/archive/refs/heads/main.zip)** — unzip and you're ready. If you know how to use git, clone the repo instead.
 3. Open an AI chat tool — [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com), [Gemini](https://gemini.google.com), or any other — and upload `ONBOARDING.md` from the folder you just downloaded or cloned into a new conversation
 4. The AI will start interviewing you — answer each question as it comes. At the end, it generates two files: `WHO_I_AM.md` (your profile) and `START_MEMORY_HOLE.md` (your session starter)
 5. Copy each file's contents and save them to your GitHub repo or local folder using the steps above. The filenames must be named exactly as shown — `WHO_I_AM.md` and `START_MEMORY_HOLE.md` — for the system to work.

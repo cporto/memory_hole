@@ -33,7 +33,7 @@ It works with any AI — Claude, ChatGPT, Gemini, or a local model. You're not l
 ## Getting started
 
 1. Read **[GUIDE.md](GUIDE.md)** first — it covers storage setup, mobile access, and your daily workflow
-2. Download the files: **[Download ZIP](../../archive/refs/heads/main.zip)** — unzip and you're ready. If you know how to use git, clone the repo instead.
+2. Download the files: **[Download ZIP](https://github.com/cporto/memory_hole/archive/refs/heads/main.zip)** — unzip and you're ready. If you know how to use git, clone the repo instead.
 3. Open an AI chat tool — [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com), [Gemini](https://gemini.google.com), or any other — and upload `ONBOARDING.md` from the folder you just downloaded or cloned into a new conversation
 4. The AI will start interviewing you — answer each question as it comes. At the end, it generates two files: `WHO_I_AM.md` (your profile) and `START_MEMORY_HOLE.md` (your session starter)
 5. Save those two files to your repo or folder
