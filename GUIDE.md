@@ -72,7 +72,7 @@ This section then walks you through creating your GitHub account and setting up 
 
 Go to **[github.com](https://github.com)** and click **Sign up**.
 
-> *[screenshot: GitHub homepage with Sign up button highlighted]*
+![GitHub homepage with Sign up button](screenshots/github.png)
 
 Follow the prompts to create your account. A free account is all you need — don't pay for anything.
 
@@ -84,7 +84,7 @@ A repository (or "repo") is just a folder on GitHub where your files will live.
 
 Once you're logged in, click the **+** icon in the top right corner of the page, then click **New repository**.
 
-> *[screenshot: GitHub top navigation with + icon and "New repository" option highlighted]*
+![GitHub dashboard with + New button highlighted](screenshots/create_new.png)
 
 Fill in the details:
 
@@ -92,7 +92,7 @@ Fill in the details:
 - **Description:** optional — you can leave it blank
 - **Visibility:** set to **Private** — this means only you can see it
 
-> *[screenshot: New repository form with name field, and Private option selected]*
+![New repository form showing Private option](screenshots/create_new_repo_private.png)
 
 Click **Create repository**.
 
@@ -100,23 +100,21 @@ Click **Create repository**.
 
 ### 3. Add your first file
 
-After the interview (Step 1 below), you'll have two files to save here. Here's how to add a file to your repo:
+After the interview (Step 1 below), you'll have two files to save here. The easiest way is to drag and drop them directly into your repo.
 
-On your repository page, click **Add file**, then click **Create new file**.
+On your repository page, drag your files into the upload area, or click **choose your files** to browse.
 
-> *[screenshot: Repository page with "Add file" button highlighted]*
+![Empty repo with drag and drop upload area](screenshots/private_repo_created.png)
 
-Name the file exactly as shown — `WHO_I_AM.md` — then paste your content into the editor below. The filename must match exactly for the system to work.
+Once your file appears in the list below the upload area, scroll down and click **Commit changes** to save.
 
-> *[screenshot: New file editor with filename field and content area highlighted]*
-
-When you're done, scroll down and click **Commit changes**. You can leave the commit message as-is.
-
-> *[screenshot: Commit changes button at bottom of file editor]*
+![File staged and ready to commit](screenshots/file_added_to_github.png)
 
 "Committing" just means saving. Every time you commit, GitHub takes a snapshot of the file at that moment — so you can always go back to an earlier version if something goes wrong.
 
-That's it. The file is saved.
+Your file is now saved and visible in your repository.
+
+![Repository showing uploaded file](screenshots/repo_updated_with_file.png)
 
 ---
 
@@ -124,7 +122,7 @@ That's it. The file is saved.
 
 When you need to update a file after a session, click the file name to open it, then click the **pencil icon** in the top right of the file view to edit it.
 
-> *[screenshot: File view with pencil/edit icon highlighted]*
+![File view with pencil edit icon highlighted](screenshots/edit_this_file.png)
 
 Paste in your updated content, then click **Commit changes** to save.
 
@@ -144,6 +142,8 @@ You have two options depending on where your Memory Hole files live.
 
 If you're using GitHub to store your files, install **[Working Copy](https://workingcopyapp.com)** — available on the App Store at **workingcopyapp.com** or search "Working Copy." It connects to your GitHub account and mounts your repository directly into the iOS Files app — so you can access and upload your memory files the same way you'd open any document on your phone.
 
+![Working Copy in the App Store](screenshots/working_copy_app_store.png)
+
 > **Note:** GitHub also has an iOS app, but it's not what you need here — it's built for managing code projects, not editing files. Use Working Copy instead.
 
 To connect Working Copy to GitHub:
@@ -154,12 +154,6 @@ To connect Working Copy to GitHub:
 5. Once cloned, your files will appear inside the iOS Files app under Working Copy
 
 > **Sync before you start.** Before uploading any files into a session, open Working Copy and pull the latest version of your repository. If you've edited files on another device since last time, this ensures you're not working from stale memory.
-
-> *[screenshot: Working Copy app in App Store]*
-
-> *[screenshot: Working Copy clone repository screen with GitHub option highlighted]*
-
-> *[screenshot: Memory Hole repo visible inside iOS Files app]*
 
 ---
 
@@ -227,25 +221,33 @@ This works anywhere — Mac, Windows, a library computer, doesn't matter. The on
 
 If you want your memory files available offline, or you prefer editing in a proper text editor, install **[GitHub Desktop](https://desktop.github.com)** — a free app made by GitHub, available for both Mac and Windows.
 
+![GitHub Desktop download page](screenshots/download_github.png)
+
 GitHub Desktop syncs your GitHub repository to a folder on your computer. You edit the files locally in any text editor, then use GitHub Desktop to push the changes back to GitHub.
 
 To set it up:
 1. Download and install **GitHub Desktop** from **[desktop.github.com](https://desktop.github.com)**
 2. Open the app and sign in with your GitHub account
-3. Click **File → Clone repository**
-4. Select your `memory-hole` repository from the list
-5. Choose where to save it on your computer and click **Clone**
 
-> *[screenshot: GitHub Desktop clone repository screen with memory-hole repo selected]*
+![GitHub Desktop welcome screen](screenshots/github_desktop.png)
+
+3. Click **File → Clone repository**
+4. Enter your repository URL or select it from the list, choose where to save it on your computer, and click **Clone**
+
+![GitHub Desktop clone repository dialog](screenshots/clone_repo.png)
 
 Your files are now on your computer. You can open and edit them in any text editor — TextEdit on Mac, Notepad on Windows, or whatever you prefer.
 
 After editing, push your changes back to GitHub:
 1. Open GitHub Desktop — it will show the files you changed
 2. Add a short note in the **Summary** field (e.g. "session update")
-3. Click **Commit to main**, then click **Push origin**
+3. Click **Commit to main**
 
-> *[screenshot: GitHub Desktop showing changed files, commit summary field, and Push origin button]*
+![GitHub Desktop showing changed file ready to commit](screenshots/github_desktop_change.png)
+
+4. Then click **Push origin** to sync your changes to GitHub
+
+![GitHub Desktop showing Push origin button](screenshots/github_desktop_push.png)
 
 That's it — your changes are saved to GitHub and backed up.
 
@@ -257,10 +259,11 @@ That's it — your changes are saved to GitHub and backed up.
 
 This is a one-time step. It generates the two core files you need to use the system.
 
-1. Open any AI tool — [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com), [Gemini](https://gemini.google.com), your choice
-2. Upload `ONBOARDING.md` directly into a new AI conversation
-3. The AI will start interviewing you — answer each question as it comes. At the end, it generates two files: `WHO_I_AM.md` (your profile) and `START_MEMORY_HOLE.md` (your session starter)
-4. Copy each file's contents and save them to your GitHub repo or local folder using the steps above. The filenames must be named exactly as shown — `WHO_I_AM.md` and `START_MEMORY_HOLE.md` — for the system to work.
+1. Read **[GUIDE.md](GUIDE.md)** first — it covers storage setup, mobile access, and your daily workflow
+2. Download the files: **[Download ZIP](../../archive/refs/heads/main.zip)** — unzip and you're ready. If you know how to use git, clone the repo instead.
+3. Open an AI chat tool — [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com), [Gemini](https://gemini.google.com), or any other — and upload `ONBOARDING.md` from the folder you just downloaded or cloned into a new conversation
+4. The AI will start interviewing you — answer each question as it comes. At the end, it generates two files: `WHO_I_AM.md` (your profile) and `START_MEMORY_HOLE.md` (your session starter)
+5. Copy each file's contents and save them to your GitHub repo or local folder using the steps above. The filenames must be named exactly as shown — `WHO_I_AM.md` and `START_MEMORY_HOLE.md` — for the system to work.
 
 > **If your AI doesn't support file uploads**, open `ONBOARDING.md` in any text editor, copy the entire contents, and paste it into the conversation instead.
 
