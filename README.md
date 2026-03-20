@@ -32,12 +32,12 @@ It works with any AI — Claude, ChatGPT, Gemini, or a local model. You're not l
 
 ## Getting started
 
-1. Clone or download this repo
-2. Open `ONBOARDING.md` and upload it into any AI conversation
-3. Answer the interview questions — the AI generates your personal `WHO_I_AM.md` and `START_MEMORY_HOLE.md`
-4. Save those two files and you're live
-
-Full setup instructions, mobile setup, and daily workflow are in `GUIDE.md`.
+1. Read **[GUIDE.md](GUIDE.md)** first — it covers storage setup, mobile access, and your daily workflow
+2. Download the files: **[Download ZIP](../../archive/refs/heads/main.zip)** — unzip and you're ready. If you know how to use git, clone the repo instead.
+3. Upload `ONBOARDING.md` into any AI conversation — [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com), [Gemini](https://gemini.google.com), your choice
+4. Answer the interview questions — the AI generates your personal `WHO_I_AM.md` and `START_MEMORY_HOLE.md`
+5. Save those two files to your repo or folder
+6. Load `START_MEMORY_HOLE.md` at the start of any AI conversation — you're live
 
 ---
 
