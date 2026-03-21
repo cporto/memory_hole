@@ -12,32 +12,6 @@ It works with any AI — Claude, ChatGPT, Gemini, or a local model. You're not l
 
 ---
 
-## Contents
-
-- [Before you start — pick your storage](#before-you-start--pick-your-storage)
-- [GitHub Setup](#github-setup)
-  - [1. Create a GitHub account](#1-create-a-github-account)
-  - [2. Create a new repository](#2-create-a-new-repository)
-  - [3. Add your first file](#3-add-your-first-file)
-  - [4. Editing a file later](#4-editing-a-file-later)
-  - [5. On Mobile](#5-on-mobile)
-  - [6. On Mac or Windows](#6-on-mac-or-windows)
-- [Step 1 — Run the onboarding interview](#step-1--run-the-onboarding-interview)
-- [Step 2 — Your daily workflow](#step-2--your-daily-workflow)
-  - [Starting a new conversation](#starting-a-new-conversation-no-specific-project)
-  - [Working on a project](#working-on-a-project)
-  - [Capturing research](#capturing-research)
-  - [Logging decisions](#logging-decisions)
-  - [Pulling in extra context](#pulling-in-extra-context)
-- [Keeping your memory clean](#keeping-your-memory-clean)
-- [Keeping your profile up to date](#keeping-your-profile-up-to-date)
-- [What "update memory hole" does](#what-update-memory-hole-does)
-- [What never goes in Memory Hole](#what-never-goes-in-memory-hole)
-- [File reference](#file-reference)
-- [Common mistakes](#common-mistakes)
-
----
-
 ## Before you start — pick your storage
 
 Memory Hole needs somewhere to live. There are two options.
@@ -60,11 +34,7 @@ What you give up: there's no version history. If you overwrite a file by mistake
 
 ## GitHub Setup
 
-Before anything else, download the Memory Hole starter files: **[Download ZIP](https://github.com/cporto/memory_hole/archive/refs/heads/main.zip)**
-
-The folder contains all the files referenced in this guide — including `ONBOARDING.md`, which you'll need in Step 1.
-
-This section then walks you through creating your GitHub account and setting up your own Memory Hole repository. You only do this once.
+This section walks you through creating your GitHub account and setting up your own private Memory Hole repository. You only do this once.
 
 ---
 
@@ -100,7 +70,7 @@ Click **Create repository**.
 
 ### 3. Add your first file
 
-After the interview (Step 1 below), you'll have two files to save here. The easiest way is to drag and drop them directly into your repo.
+After the interview (Step 1 below), you'll have files to save here. The easiest way is to drag and drop them directly into your repo.
 
 On your repository page, drag your files into the upload area, or click **choose your files** to browse.
 
@@ -259,10 +229,12 @@ That's it — your changes are saved to GitHub and backed up.
 
 This is a one-time step. It generates the two core files you need to use the system.
 
-1. Read **[GUIDE.md](GUIDE.md)** first — it covers storage setup, mobile access, and your daily workflow
-2. Download the files: **[Download ZIP](https://github.com/cporto/memory_hole/archive/refs/heads/main.zip)** — unzip and you're ready. If you know how to use git, clone the repo instead.
-3. Open an AI chat tool — [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com), [Gemini](https://gemini.google.com), or any other — and upload `ONBOARDING.md` from the folder you just downloaded or cloned into a new conversation
-4. The AI will start interviewing you — answer each question as it comes. At the end, it generates two files: `WHO_I_AM.md` (your profile) and `START_MEMORY_HOLE.md` (your session starter)
+1. Open any AI tool — [Claude](https://claude.ai), [ChatGPT](https://chatgpt.com), [Gemini](https://gemini.google.com), your choice
+2. Upload `ONBOARDING.md` directly into a new AI conversation
+3. The AI will interview you — one question at a time. Answer honestly. It's surfacing what you constantly re-explain to AI tools.
+4. At the end, the AI outputs two completed files:
+   - **`WHO_I_AM.md`** — your profile. Source of truth. Update this when things about you change.
+   - **`START_MEMORY_HOLE.md`** — your session starter. This is the only file you upload at the beginning of every conversation. Your `WHO_I_AM.md` content is already embedded inside it — you never upload `WHO_I_AM.md` directly into a session.
 5. Copy each file's contents and save them to your GitHub repo or local folder using the steps above. The filenames must be named exactly as shown — `WHO_I_AM.md` and `START_MEMORY_HOLE.md` — for the system to work.
 
 > **If your AI doesn't support file uploads**, open `ONBOARDING.md` in any text editor, copy the entire contents, and paste it into the conversation instead.
@@ -279,8 +251,10 @@ Your files are plain text — you can open them in any text editor (Notes app, T
 
 > **Sync before you start.** If you've edited files on another device since last time, make sure you have the latest version before copying anything. Stale memory loaded into an AI conversation means the AI is working from outdated context.
 
-1. Upload `START_MEMORY_HOLE.md` directly into a new AI conversation
+1. Upload `START_MEMORY_HOLE.md` into a new AI conversation — this is the only file you need
 2. Work normally — the AI already knows who you are
+
+> **`WHO_I_AM.md` is already embedded inside `START_MEMORY_HOLE.md`.** You never upload it separately. If you find yourself reaching for it, stop — `START_MEMORY_HOLE.md` has everything.
 
 > **If your AI doesn't support file uploads** (some local LLMs and simpler interfaces), open `START_MEMORY_HOLE.md` in any text editor, copy the entire contents, and paste it into the conversation instead.
 
@@ -293,7 +267,6 @@ The AI generates formatted updates for any files that changed. Copy those update
 ### Working on a project
 
 Here's what a typical project setup looks like:
-
 ```
 projects/
   my-website-redesign/
@@ -312,8 +285,10 @@ If a new project comes up during a session, the AI will flag it and offer to cre
 
 To work on an existing project:
 
-1. Upload `START_MEMORY_HOLE.md` and `project.md` from your project subfolder into a new AI conversation
+1. Upload `START_MEMORY_HOLE.md` and `project.md` from your project subfolder — these are the only two files you need
 2. Work — the AI knows your identity, your project state, open questions, and decisions already made. It won't re-open things you've already settled.
+
+> **`WHO_I_AM.md` is already embedded inside `START_MEMORY_HOLE.md`.** Never upload it as a third file — it's redundant and wastes context space.
 
 > **If your project has split files** (`research.md` or `decisions.md`), you don't need to load them upfront. Only upload them mid-session if the work specifically requires digging into research or reviewing past decisions. Load what's relevant, when it's relevant.
 
@@ -369,6 +344,8 @@ Your `WHO_I_AM.md` file is your source of truth. If something about how you work
 
 You can update it two ways. The first is directly — open the file, edit it, and save it back. The second is during a session — mention the change and the AI will include an updated version of `WHO_I_AM.md` in the "update memory hole" output. Either way, you still need to copy the output and save it back to your file manually — nothing saves automatically.
 
+Once you've updated `WHO_I_AM.md`, copy its contents into the `## Who I am` section of `START_MEMORY_HOLE.md` to keep them in sync. `START_MEMORY_HOLE.md` is what gets loaded — if it's out of date, the AI is working from stale context.
+
 ---
 
 ## What "update memory hole" does
@@ -398,8 +375,8 @@ Context and reasoning only. If it's sensitive, keep it out.
 | File | What it is | When you use it |
 |------|-----------|----------------|
 | `ONBOARDING.md` | The setup interview | Once, at the very beginning |
-| `WHO_I_AM.md` | Your profile — source of truth | Update it when things change |
-| `START_MEMORY_HOLE.md` | Session starter — upload or paste this every time | Every session |
+| `WHO_I_AM.md` | Your profile — source of truth | Update it when things change; never load it directly into sessions |
+| `START_MEMORY_HOLE.md` | Session starter — the only file you upload every session | Every session — contains your WHO_I_AM.md already |
 | `projects/[name]/project.md` | Main file for each project | When working on that project |
 | `projects/[name]/research.md` | Research notes — auto-split from project.md when large | On demand, mid-session only |
 | `projects/[name]/decisions.md` | Decisions — auto-split from project.md when large | On demand, mid-session only |
@@ -409,6 +386,8 @@ Context and reasoning only. If it's sensitive, keep it out.
 
 ## Common mistakes
 
+**Uploading `WHO_I_AM.md` into a session.** You don't need to — it's already embedded inside `START_MEMORY_HOLE.md`. Uploading it separately wastes context space and is redundant.
+
 **Loading too many files upfront.** Only upload or paste what's relevant. More context isn't always better — it can dilute the AI's focus.
 
 **Forgetting to say "update memory hole."** If you don't do this, the session is lost. The AI's memory doesn't persist on its own — your files do.
@@ -416,3 +395,5 @@ Context and reasoning only. If it's sensitive, keep it out.
 **Not saving the updates.** The AI generates the updates, but you have to copy the output and save it back to your files manually. Nothing saves automatically.
 
 **Using stale files.** If you edited files on another device and didn't sync first, you'll load outdated context. Always make sure you have the latest version before starting a session.
+
+**Forgetting to sync `START_MEMORY_HOLE.md` after updating `WHO_I_AM.md`.** If you update your profile but don't copy the changes into `START_MEMORY_HOLE.md`, the AI is still working from your old context.
