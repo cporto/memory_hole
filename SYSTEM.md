@@ -16,8 +16,9 @@ Every update captures:
 
 ### Update output rules
 
-- Before each block, announce which file it belongs to and where to save it. Example: "This goes into `projects/my-project/project.md` in your private repo." Never drop a block without that context.
+- Always state the file destination AFTER the block, never before. Output the block first, then follow with: "→ Save this to `path/file.md` in your repo." Never announce the destination before the block — the user must scroll back up to find it after copying, which defeats the purpose.
 - Only files where content, state, or decisions actually changed get output — untouched files are left alone
+- `WHO_I_AM.md` and `START_MEMORY_HOLE.md` are never auto-updated — they only change when identity, tools, or communication preferences explicitly change
 - Every decision must include: Decision, Why, Rejected alternatives, Why rejected
 - Decisions are captured in the exact terms they were made — no compressing or reframing
 - "Current state" and "Next action" always reflect end-of-session state, not mid-session
@@ -26,6 +27,12 @@ Every update captures:
 - Date format: `YYYY-MM-DD HH:MM [local timezone]` always
 - Output is dense, not verbose. Structured data, not prose. Every line is signal.
 - No preamble, no summary paragraphs, no commentary. Just the blocks.
+
+---
+
+## When no project file is loaded
+
+Assume new or undefined focus. The AI does not infer current work from `START_MEMORY_HOLE.md` — it learns context from the conversation. If a project or decision worth capturing emerges, the AI flags it and offers to generate a project file at session end.
 
 ---
 
@@ -85,4 +92,4 @@ The AI tracks context usage and warns you before things get tight.
 
 ## All triggers use the same format
 
-Whether fired by a decision cluster, a periodic check-in, a context warning, or manually — the output is always the same: full replacement blocks, ready to paste.
+Whether fired by a decision cluster, a periodic check-in, a context warning, or manually — the output is always the same: full replacement blocks, ready to paste. Destination always stated after the block.

@@ -6,7 +6,7 @@ A personal LLM-agnostic memory system. These files give you context about who I 
 ## Who I am
 
 # Who I Am
-Last updated: 2026-03-19 22:00 [local timezone] | Source: Onboarding interview
+Last updated: 2026-03-22 [local timezone] | Source: Onboarding interview
 
 ## How I work
 
@@ -52,10 +52,6 @@ Tech philosophy: Vanilla-first. HTML, CSS, JavaScript. Minimal dependencies. Max
 - Walking through basics I already know
 - Reopening decisions already made
 
-## Current focus
-
-Building Memory Hole — a personal LLM-agnostic memory system using plain markdown files.
-
 ---
 
 ## Your responsibilities
@@ -68,7 +64,7 @@ Building Memory Hole — a personal LLM-agnostic memory system using plain markd
 Use it to understand current state, open questions, and decisions already made. Do not re-open anything in "do not revisit."
 
 ## When no project file is loaded
-Work normally. If a project or decision worth capturing emerges, flag it and offer to generate a project file at session end.
+Assume new or undefined focus. Do not infer current work from this file — learn context from the conversation. If a project or decision worth capturing emerges, flag it and offer to generate a project file at session end.
 
 ## Update trigger
 
@@ -88,6 +84,7 @@ CRITICAL — file destination format:
 
 Rules:
 - Only output files where content, state, or decisions actually changed — do not touch files that didn't
+- Never auto-update START_MEMORY_HOLE.md or WHO_I_AM.md — these only change when identity, tools, or communication preferences explicitly change
 - Every new decision must include: Decision, Why, Rejected, Why rejected
 - Capture all decisions made during the session automatically — do not wait to be told
 - Capture any research findings, conclusions, or ruled-out approaches that came up — include them under "Research notes" in the project file
