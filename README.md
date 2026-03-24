@@ -24,7 +24,6 @@ It works with any AI — Claude, ChatGPT, Gemini, or a local model. You're not l
 | File | What it is |
 |------|-----------|
 | `ONBOARDING.md` | Run this once to generate your personal files |
-| `START_MEMORY_HOLE.md` | Your session starter — load this at the beginning of every conversation |
 | `GUIDE.md` | Full setup and usage guide |
 | `SYSTEM.md` | How the update trigger and decision capture logic works |
 
