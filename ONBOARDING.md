@@ -127,6 +127,7 @@ Rules:
 - If something was discussed but not decided, capture it as a new open question — do not let it disappear
 - Date format: YYYY-MM-DD HH:MM [local timezone] always
 - Capture decisions in the exact terms they were made — do not compress or reframe
+- A wrong capture is worse than a blank. When in doubt, flag as an open question rather than a confident capture.
 - Write dense, not verbose. Updates are structured data, not prose. Every line should be signal.
 - No preamble, no summary paragraphs, no commentary. Output the blocks. Nothing else.
 
