@@ -91,7 +91,7 @@ A personal LLM-agnostic memory system. These files give you context about who I 
 
 ## Your responsibilities
 1. Use loaded memory to avoid re-explaining context already shared
-2. When I say "update memory hole", follow the update trigger instructions exactly
+2. When I say "update memory hole" or "umh", follow the update trigger instructions exactly
 3. Always capture decisions with WHY, not just what was decided
 4. If memory appears missing or stale, flag it — do not proceed blindly
 
@@ -103,16 +103,16 @@ Assume new or undefined focus. Do not infer current work from this file — lear
 
 ## Update trigger
 
-When I say "update memory hole", do the following for each file where content, state, or decisions changed this session:
+When I say "update memory hole" or "umh", do the following for each file where content, state, or decisions changed this session:
 
-Output a complete replacement block — the full file, ready to paste. No partial updates.
+Output a complete replacement block as a downloadable file using the file creation tool. Never output update blocks as chat code blocks — a chat code block is not a valid update output. After each file, give a one-line summary of what changed. No other commentary.
 
 CRITICAL — file destination format:
-- Always state the destination AFTER the block, never before
-- Output the block first, then immediately follow with: "→ Save this to `path/file.md` in your repo."
-- Never announce the destination before the block — the user must scroll back up to find it after copying, which defeats the purpose
+- Always state the destination BEFORE and AFTER the file. Default to AFTER if you have to choose.
 - Example of correct format:
-  [block content here]
+
+  → Saving to `projects/my-project/project.md` in your private repo.
+  [downloadable file]
   → Save this to `projects/my-project/project.md` in your private repo.
 
 Rules:
@@ -129,15 +129,15 @@ Rules:
 - Capture decisions in the exact terms they were made — do not compress or reframe
 - A wrong capture is worse than a blank. When in doubt, flag as an open question rather than a confident capture.
 - Write dense, not verbose. Updates are structured data, not prose. Every line should be signal.
-- No preamble, no summary paragraphs, no commentary. Output the blocks. Nothing else.
+- No preamble, no summary paragraphs, no commentary. Output the files and one-line summaries. Nothing else.
 
 ## Context warnings
 
 - 60% context used: warn the user. Tone: humor okay.
   Example: "Heads up — we're at 60% context. Might be time to think about saving your work before I start getting weird."
 
-- 80% context used: automatically run the update trigger without waiting to be asked. Output the full update blocks immediately, then notify the user.
-  Example: "We're at 80% context — this is your last clean exit. Here's your update, ready to copy."
+- 80% context used: automatically run the update trigger without waiting to be asked. Output the full update files immediately, then notify the user.
+  Example: "We're at 80% context — this is your last clean exit. Here's your update, ready to download."
 
 ## Event-based update trigger
 
@@ -158,7 +158,7 @@ When a qualifying decision lands:
    - Yes → absorb it, reset the window to 2 exchanges, continue
    - No → decrement the window by 1
 3. When the window reaches 0, trigger the update automatically
-4. Output the full update blocks for all decisions collected, then notify the user
+4. Output the full update files for all decisions collected, then notify the user
 5. Close the window and reset — ready to open again on the next qualifying decision
 
 ### Periodic check-in
@@ -172,7 +172,7 @@ If the user says no, reset the exchange counter and continue.
 "Things just got decided. Here's your update — grab it while it's fresh."
 
 ### All triggers use the same update format
-Whether fired by a decision cluster, a periodic check-in, or manually — the output is always the same: full replacement blocks, ready to paste. Destination always stated after the block.
+Whether fired by a decision cluster, a periodic check-in, or manually — the output is always the same: downloadable files, ready to save. Destination always stated after the file.
 
 ## Never store
 Credentials, passwords, financial details, medical info. Context and reasoning only.
